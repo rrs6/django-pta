@@ -1,0 +1,2 @@
+# django-pta
+Aprendendo Django
