@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <title>Navy Seals &#127946;</title>
+</head>
+<body>
+    <div>
+                <div class="header">
+                    <h1>Navy Seals - Seja um e defenda sua pátria.</h1>
+                    <p class="text">"Bons homens por aqui passam"</p>
+                </div>
+                <div class="corpus">
+                        <p>O processo de seleção da Marinha Americana é muito difícil, porém é um desafio a ser encarado com motivação. Pois poucos passam no processo.</p>
+                        <p>Portanto, ser um Navy Seals é um reconhecimento enorme, visto que você lutou muito (muito mesmo!), para conseguir ser um Navy.</p>
+                        <div class="content">
+                                <h2>E ai, ficou interessado ? Vejam os requisitos para participar do processo.</h2>
+                                <ul>
+                                    <li>Ter 1,75 de altura.</li>
+                                    <li>Ter menos que 35 anos.</li>
+                                    <li>Não usar drogas (obviamente) e nem fumar cigarro, charuto ou qualquer outro tipo de fumo.</li>
+                                    <li>Ter ensino médio completo.</li>
+                                    <li>Saber nadar muito bem.</li>
+                                    <li>Saber falar inglês fluentemente.</li>
+                                    <li>Não ter medo (Parece piada, mas é requisito, e vocês vão ver porque).</li>
+                                </ul>
+                                <ol>
+                                    <p>As prioridades na inscrição são para: </p>
+                                    <li>Homens (que se encaixem no perfil acima).</li>
+                                    <li>A idade é cresce prioritariamente crescendo.</li>
+                                </ol>
+                                <h2>Lista de soldados</h2>
+                                {% for soldado in soldados %}
+                                    <h3>{{soldado.nome}}</h3>
+                                {% endfor %}
+                                <img src ="https://images01.military.com/sites/default/files/styles/full/public/2018-04/navyseals_1200x800.jpg?itok=fkKVvC7M" alt="Soldiers Navy" width="350" height="200">
+                                <p>Então segue o link da inscrição - <a href = "http://www.sealswcc.com/"> Inscrição</a></p>
+                        </div>
+                </div>
+    </div>
+    <div>
+    </div>
+</body>
+</html>
